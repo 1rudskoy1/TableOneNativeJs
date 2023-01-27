@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <title>Таблица</title>
+    </head>
+
+    <body>
+        <main id="app">
+            <table class="table container">
+                <thead>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Индекс</th>
+                        <th scope="col">Имя</th>
+                        <th scope="col">Значение</th>
+                    </tr>
+                </thead>
+                <tbody id="items" data-role="items">
+                </tbody>
+            </table>
+            <div class="add">
+                <div class="container">
+                    <h2 class="add__header">Добавить или Выгрузить</h2>
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                aria-selected="true">Единичный</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">Json</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <div class="mb-3">
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Имя</label>
+                                    <input type="email" class="form-control" data-role="add-name" id="name"
+                                        placeholder="Имя">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="value" class="form-label">Значение</label>
+                                    <input type="email" class="form-control" data-role="add-value" id="value"
+                                        placeholder="Значение">
+                                </div>
+                                <button type="button" class="btn btn-success" data-role="add-button">Добавить</button>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label header-mini">Добавить или
+                                    Выгрузить</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"
+                                    data-role="add-textarea"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-success" data-role="add-lot-button">Добавить</button>
+                            <button type="button" class="btn btn-primary"
+                                data-role="upload">Сохранить(Выгрузить)</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
+    <script type="module" src="./js/index.js"></script>
+
+</html>

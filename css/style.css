@@ -1,0 +1,23 @@
+.table {
+  margin-top: 50px;
+}
+.add__header {
+  font-size: 30px;
+  text-align: center;
+  margin: 25px 0;
+}
+
+.header-mini {
+  margin: 15px 0;
+  font-size: 20px;
+}
+.selected {
+  opacity: 0.6;
+}
+.drop-icon {
+  font-size: 20px;
+  cursor: pointer;
+}
+.button {
+  color: #dc3545;
+}
